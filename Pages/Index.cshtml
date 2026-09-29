@@ -12,28 +12,28 @@
         <form id="albumForm">
             <div class="mb-3">
                 <label for="albumTitle" class="form-label">Album title</label>
-                <input type="text" class="form-control" id="albumTitle" name="albumTitle" />
+                <input type="text" class="form-control" id="albumTitle" name="albumTitle" minlength="3" required />
             </div>
 
             <div class="mb-3">
                 <label for="artist" class="form-label">Artist</label>
-                <input type="text" class="form-control" id="artist" name="artist" />
+                <input type="text" class="form-control" id="artist" name="artist" minlength="3" required />
             </div>
 
             <div class="row">
                 <div class="col-md-6 mb-3">
                     <label for="releaseYear" class="form-label">Release year</label>
-                    <input type="number" class="form-control" id="releaseYear" name="releaseYear" min="0" max="9999" />
+                    <input type="number" class="form-control" id="releaseYear" name="releaseYear" min="100" max="9999" required />
                 </div>
                 <div class="col-md-6 mb-3">
                     <label for="genre" class="form-label">Genre</label>
-                    <input type="text" class="form-control" id="genre" name="genre" />
+                    <input type="text" class="form-control" id="genre" name="genre" minlength="3" required />
                 </div>
             </div>
 
             <div class="mb-3">
                 <label for="recordLabel" class="form-label">Record label</label>
-                <input type="text" class="form-control" id="recordLabel" name="recordLabel" />
+                <input type="text" class="form-control" id="recordLabel" name="recordLabel" minlength="3" required />
             </div>
 
             <button type="submit" class="btn btn-primary">Submit album</button>

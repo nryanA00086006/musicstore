@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EmeraldMusicStore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2cd845213595abe3ac50f9d203a6816bf03f2e3a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+168177cd455fafe084ba315b3f11ad80cea39623")]
 [assembly: System.Reflection.AssemblyProductAttribute("EmeraldMusicStore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EmeraldMusicStore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
