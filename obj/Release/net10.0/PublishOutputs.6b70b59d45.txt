@@ -1,0 +1,7 @@
+/Users/nathanryan/Desktop/collegecode/musicstore/EmeraldMusicStore/bin/Release/net10.0/publish/EmeraldMusicStore
+/Users/nathanryan/Desktop/collegecode/musicstore/EmeraldMusicStore/bin/Release/net10.0/publish/appsettings.Development.json
+/Users/nathanryan/Desktop/collegecode/musicstore/EmeraldMusicStore/bin/Release/net10.0/publish/appsettings.json
+/Users/nathanryan/Desktop/collegecode/musicstore/EmeraldMusicStore/bin/Release/net10.0/publish/EmeraldMusicStore.dll
+/Users/nathanryan/Desktop/collegecode/musicstore/EmeraldMusicStore/bin/Release/net10.0/publish/EmeraldMusicStore.deps.json
+/Users/nathanryan/Desktop/collegecode/musicstore/EmeraldMusicStore/bin/Release/net10.0/publish/EmeraldMusicStore.runtimeconfig.json
+/Users/nathanryan/Desktop/collegecode/musicstore/EmeraldMusicStore/bin/Release/net10.0/publish/EmeraldMusicStore.pdb

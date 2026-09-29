@@ -1,0 +1,75 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="row justify-content-center">
+    <div class="col-lg-8">
+        <h1 class="mb-2">Add a music album</h1>
+        <p class="text-muted mb-4">Enter some details about an album.</p>
+
+        <form>
+            <div class="mb-3">
+                <label for="albumTitle" class="form-label">Album title</label>
+                <input type="text" class="form-control" id="albumTitle" name="albumTitle" />
+            </div>
+
+            <div class="mb-3">
+                <label for="artist" class="form-label">Artist</label>
+                <input type="text" class="form-control" id="artist" name="artist" />
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="releaseYear" class="form-label">Release year</label>
+                    <input type="number" class="form-control" id="releaseYear" name="releaseYear" min="0" max="9999" />
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="genre" class="form-label">Genre</label>
+                    <input type="text" class="form-control" id="genre" name="genre" />
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="recordLabel" class="form-label">Record label</label>
+                <input type="text" class="form-control" id="recordLabel" name="recordLabel" />
+            </div>
+        </form>
+
+        <div id="albumConfirmation" class="alert alert-success mt-4" role="status" aria-live="polite" hidden>
+            <strong>Album information entered:</strong>
+            <span id="albumConfirmationText"></span>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        const albumFields = [
+            ["Album title", "albumTitle"],
+            ["Artist", "artist"],
+            ["Release year", "releaseYear"],
+            ["Genre", "genre"],
+            ["Record label", "recordLabel"]
+        ];
+
+        const confirmation = document.getElementById("albumConfirmation");
+        const confirmationText = document.getElementById("albumConfirmationText");
+
+        function updateAlbumConfirmation() {
+            const details = albumFields
+                .map(([label, id]) => {
+                    const value = document.getElementById(id).value.trim();
+                    return value ? `${label}: ${value}` : null;
+                })
+                .filter(Boolean);
+
+            confirmationText.textContent = details.join(" | ");
+            confirmation.hidden = details.length === 0;
+        }
+
+        document.querySelectorAll("#albumTitle, #artist, #releaseYear, #genre, #recordLabel")
+            .forEach(field => field.addEventListener("input", updateAlbumConfirmation));
+    </script>
+}
