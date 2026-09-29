@@ -9,7 +9,7 @@
         <h1 class="mb-2">Add a music album</h1>
         <p class="text-muted mb-4">Enter some details about an album.</p>
 
-        <form>
+        <form id="albumForm">
             <div class="mb-3">
                 <label for="albumTitle" class="form-label">Album title</label>
                 <input type="text" class="form-control" id="albumTitle" name="albumTitle" />
@@ -35,10 +35,12 @@
                 <label for="recordLabel" class="form-label">Record label</label>
                 <input type="text" class="form-control" id="recordLabel" name="recordLabel" />
             </div>
+
+            <button type="submit" class="btn btn-primary">Submit album</button>
         </form>
 
         <div id="albumConfirmation" class="alert alert-success mt-4" role="status" aria-live="polite" hidden>
-            <strong>Album information entered:</strong>
+            <strong>Your album information has been submitted.</strong>
             <span id="albumConfirmationText"></span>
         </div>
     </div>
@@ -56,8 +58,11 @@
 
         const confirmation = document.getElementById("albumConfirmation");
         const confirmationText = document.getElementById("albumConfirmationText");
+        const albumForm = document.getElementById("albumForm");
 
-        function updateAlbumConfirmation() {
+        albumForm.addEventListener("submit", event => {
+            event.preventDefault();
+
             const details = albumFields
                 .map(([label, id]) => {
                     const value = document.getElementById(id).value.trim();
@@ -65,11 +70,12 @@
                 })
                 .filter(Boolean);
 
-            confirmationText.textContent = details.join(" | ");
-            confirmation.hidden = details.length === 0;
-        }
+            confirmationText.textContent = details.length ? ` ${details.join(" | ")}` : "";
+            confirmation.hidden = false;
+        });
 
-        document.querySelectorAll("#albumTitle, #artist, #releaseYear, #genre, #recordLabel")
-            .forEach(field => field.addEventListener("input", updateAlbumConfirmation));
+        albumForm.addEventListener("input", () => {
+            confirmation.hidden = true;
+        });
     </script>
 }

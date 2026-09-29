@@ -95,3 +95,4 @@
 /Users/nathanryan/Desktop/collegecode/musicstore/EmeraldMusicStore/obj/Debug/net10.0/EmeraldMusicStore.pdb
 /Users/nathanryan/Desktop/collegecode/musicstore/EmeraldMusicStore/obj/Debug/net10.0/EmeraldMusicStore.genruntimeconfig.cache
 /Users/nathanryan/Desktop/collegecode/musicstore/EmeraldMusicStore/obj/Debug/net10.0/ref/EmeraldMusicStore.dll
+/Users/nathanryan/Desktop/collegecode/musicstore/EmeraldMusicStore/obj/Debug/net10.0/EmeraldMusicStore.sourcelink.json
