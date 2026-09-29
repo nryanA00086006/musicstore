@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/nathanryan/Desktop/collegecode/musicstore/EmeraldMusicStore/EmeraldMusicStore.csproj",
+      "projectUniqueName": "/Users/nathanryan/Desktop/collegecode/EmeraldMusicStore/EmeraldMusicStore.csproj",
       "projectName": "EmeraldMusicStore",
-      "projectPath": "/Users/nathanryan/Desktop/collegecode/musicstore/EmeraldMusicStore/EmeraldMusicStore.csproj",
+      "projectPath": "/Users/nathanryan/Desktop/collegecode/EmeraldMusicStore/EmeraldMusicStore.csproj",
       "packagesPath": "/Users/nathanryan/.nuget/packages/",
-      "outputPath": "/Users/nathanryan/Desktop/collegecode/musicstore/EmeraldMusicStore/obj/",
+      "outputPath": "/Users/nathanryan/Desktop/collegecode/EmeraldMusicStore/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/nathanryan/.nuget/NuGet/NuGet.Config"
